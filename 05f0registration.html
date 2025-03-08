@@ -1,0 +1,31 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>registration form</title>
+        </head>
+        <body>
+            <h1>Registration form</h1>
+            <form id="registration form" onsubmit="return validateForm()"></form>
+            <label for="first name">Firstname</label>
+            <input type="text" id="first name" name="firstname"required>
+            <label for="last name">last name</label>
+            <input type="text" id="last name" name="lastname"required>
+            <label for="email">email</label>
+            <input type="email" id="email" name="email"required>
+            <label for="password">password</label>
+            <input type="password" id="password" name="password"required>
+            <label for="phno">Contact:</label>
+            <input type="text" id="phno" name="mobile" maxlength="10" required />
+            <label for="dob">date of birth</label>
+            <input type="text" id="dob" name="contact" required />
+            <script>
+                function validateForm() {
+                    let username = document.getElementById("firstname").value;
+                    let usernameError = document.getElementById("firstnameError");
+                    if (/[a-z]/.test(username)) {
+                        alert("Only uppercase letters are allowed. Lowercase letters are not allowed.");
+                        return false;
+                    }
+</script>
+        </body>
+    </html>
